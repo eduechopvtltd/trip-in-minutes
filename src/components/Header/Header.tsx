@@ -1,5 +1,4 @@
 import {afterheaderDesktopview,earthIcon,flashIcon,HomepagemobileversionImage} from "../../assets";
-import { useState } from "react";
 import MobContactBar from "../common/MobContactBar";
 import Testimonial from "../../pages/testimonials/Testimonials";
 import Footer from "../footer/Footer";
@@ -14,15 +13,6 @@ import CorporateHomePage from "../common/CorporateHomePage";
 import ExploreDestination from "../common/ExploreDestination";
 
 const Header = () => {
-  const [formData, setFormData] = useState({ name: "", email: "", mobile: "" });
-
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
   return (
     <>
       {/* ================= HEADER / HERO ================= */}
@@ -74,7 +64,7 @@ const Header = () => {
               </p>
               <div className=" hidden md:flex gap-3 mt-6">
                 <div className="flex items-center gap-3 bg-white text-black px-5 py-2.5 rounded-2xl text-xs shadow-sm">
-                  <img src={flashIcon} className="h-5 w-5 shrink-0" />
+                  <img src={flashIcon} alt="Responsive Support Icon" className="h-5 w-5 shrink-0" />
                   <div className="leading-tight">
                     <p className="font-semibold text-sm">Responsive Support</p>
                     <p className="text-[11px] text-gray-600">
@@ -83,7 +73,7 @@ const Header = () => {
                   </div>
                 </div>
                 <div className="flex items-center gap-3 bg-white text-black px-5 py-2.5 rounded-2xl text-xs shadow-sm">
-                  <img src={earthIcon} className="h-5 w-5 shrink-0" />
+                  <img src={earthIcon} alt="Wide Reach Icon" className="h-5 w-5 shrink-0" />
                   <div>
                     <p className="font-semibold">Wide Reach</p>
                     <p>Domestic & international</p>

@@ -7,7 +7,6 @@ import Inquiryform from "../../components/common/Inquiryform";
 import Faq from "../../components/common/Faq";
 import Footer from "../../components/footer/Footer";
 import MobContactBar from "../../components/common/MobContactBar";
-import ThreeLine from "../../components/smallcomp/ThreeLinr";
 import NavBar from "../../components/common/navbar/NavBar";
 import TopTab from "../../components/smallcomp/TopTab";
 

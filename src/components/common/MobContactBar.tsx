@@ -9,13 +9,13 @@ const MobContactBar = () => {
 
         {/* Phone */}
         <div className="flex md:text-left gap-1 whitespace-nowrap">
-          <img src= {Phone} className="h-[12px] w-[12px]"/>
+          <img src= {Phone} alt="Phone Icon" className="h-[12px] w-[12px]"/>
           <span>+91 7411605384 / 9082291898</span>
         </div>
   
         {/* Email */}
         <div className="flex items-center gap-0.5 ml-1 mr-0 whitespace-nowrap">
-         <img src= {Email} className="h-[12px] w-[12px]"/>
+         <img src= {Email} alt="Email Icon" className="h-[12px] w-[12px]"/>
           
           <a href="mailto:hello@tripinminutes.in">hello@tripinminutes.in</a>
         </div>
@@ -29,7 +29,7 @@ const MobContactBar = () => {
     target="_blank"
     rel="noopener noreferrer"
   >
-    <img src={Facebook} className="h-[12px] w-[12px] cursor-pointer" />
+    <img src={Facebook} alt="Facebook" className="h-[12px] w-[12px] cursor-pointer" />
   </a>
 
   <a
@@ -37,7 +37,7 @@ const MobContactBar = () => {
     target="_blank"
     rel="noopener noreferrer"
   >
-    <img src={Instagram} className="h-[12px] w-[12px] cursor-pointer" />
+    <img src={Instagram} alt="Instagram" className="h-[12px] w-[12px] cursor-pointer" />
   </a>
 
   <a
@@ -45,7 +45,7 @@ const MobContactBar = () => {
     target="_blank"
     rel="noopener noreferrer"
   >
-    <img src={linkdlin} className="h-[12px] w-[12px] cursor-pointer" />
+    <img src={linkdlin} alt="LinkedIn" className="h-[12px] w-[12px] cursor-pointer" />
   </a>
 </div>
 

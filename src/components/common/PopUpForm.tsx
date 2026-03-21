@@ -48,18 +48,25 @@ const PopUpForm = ({
   });
 
   useEffect(() => {
-    if (defaultService) {
-      formData.services.push(defaultService);
+    if (isOpen && defaultService && defaultService !== "Not Selected") {
+      setFormData((prev) => {
+        if (!prev.services.includes(defaultService)) {
+          return { ...prev, services: [...prev.services, defaultService] };
+        }
+        return prev;
+      });
     }
+
     if (!isOpen) {
       setFormData({
         name: "",
         email: "",
         mobile: "",
         services: [],
-        message:"",
+        message: "",
       });
     }
+
     if (isOpen) {
       document.body.style.overflow = "hidden";
     } else {
