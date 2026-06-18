@@ -108,6 +108,10 @@ const Footer = () => {
     Virar West, Mumbai, Maharashtra- 401303
   </p>
 
+  <p className="text-black mb-3">
+    <span className="font-semibold">Guwahati:</span> 1st floor, House No 112, Beltola, Tripura Road, Jayanagar, Opp Zudio Showroom, Guwahati- 781022
+  </p>
+
             <p className="text-black flex items-center justify-center md:justify-start gap-2">
               <span className="hidden lg:block lg:text-[16px]">📞</span>
               <a href="tel:+917411605384" className="hover:underline">
